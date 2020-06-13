@@ -1,3 +1,8 @@
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/whitman-bohorquez/'
+  }
+} : {}
 
 export default {
   mode: 'universal',
@@ -16,9 +21,7 @@ export default {
     ]
   },
 
-  router: {
-    base: '/whitman-bohorquez/'
-  },
+  ...routerBase,
   /*
   ** Customize the progress-bar color
   */
