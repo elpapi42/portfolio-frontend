@@ -3,7 +3,7 @@
     <div>
       <logo />
       <h1 class="title">
-        whitman-bohorquez
+        Whitman Bohorquez Portfolio
       </h1>
       <h2 class="subtitle">
         This is a personal portafolio created with an overkill tech stack
