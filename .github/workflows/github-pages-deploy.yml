@@ -18,6 +18,7 @@ jobs:
       with:
         node-version: '12.x'
     
+    - run: npm install nuxt
     - run: npm run generate:gh-pages
     
     - name: GitHub Pages Deployment
