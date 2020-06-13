@@ -1,4 +1,4 @@
-# whitman-bohorquez
+# Whitman Bohorquez - Professional Developer Portfolio
 
 > This is a personal portafolio created with an overkill tech stack
 
