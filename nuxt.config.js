@@ -15,6 +15,10 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+
+  router: {
+    base: '/whitman-bohorquez/'
+  },
   /*
   ** Customize the progress-bar color
   */
