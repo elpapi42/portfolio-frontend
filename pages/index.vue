@@ -3,10 +3,10 @@
     <div>
       <logo />
       <h1 class="title">
-        Whitman Bohorquez Portfolio
+        Whitman Portfolio
       </h1>
       <h2 class="subtitle">
-        This is a personal portafolio created with an overkill tech stack
+        This is a dead simple personal portafolio created with an overkill tech stack
       </h2>
     </div>
   </div>
