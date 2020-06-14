@@ -10,8 +10,8 @@
           <h1 class="text-xl">Contribs</h1>
           <h1 class="text-xl">Projects</h1>
           <h1 class="text-xl">Articles</h1>
-          <h1 class="text-xl">Contact</h1>
           <h1 class="text-xl">Story</h1>
+          <h1 class="text-xl">Contact</h1>
         </div>
       </header>
 
@@ -49,6 +49,21 @@
         </ul>
       </main>
 
+      <!-- Contributions -->
+      <main>
+        <h1 class="text-2xl text-center font-medium">Contributions</h1>
+      </main>
+
+      <!-- Projects -->
+      <main>
+        <h1 class="text-2xl text-center font-medium">Projects</h1>
+      </main>
+
+      <!-- Articles -->
+      <main>
+        <h1 class="text-2xl text-center font-medium">Articles</h1>
+      </main>
+
       <!-- story -->
       <main>
         <h1 class="text-2xl text-center font-medium">Little story about me</h1><br>
@@ -79,11 +94,16 @@
           At this point, i don't see it as something ugly anymore, I like it, not as much as building APIs, but you got the point.
         </p><br>
         <p class="text-center">
-          In the end, I learned everything anyone else learns in their career, but I do it in reverse order.
+          In the end, I learned everything anyone else learns in their career warmup, but I do it in reverse order.
           Lot of nights I fall sleep wishing go back in time 5 years and do everything the correct way 
           (not only the learn order but a lot of other stuff i don't relate on this short story), 
           maybe that way I would have a job right now. But its time to look forward, and that is what I do during the daytime!
         </p>
+      </main>
+
+      <!-- Contact -->
+      <main>
+        <h1 class="text-2xl text-center font-medium">Contact</h1>
       </main>
 
     </div>
