@@ -90,7 +90,7 @@
           From the start, I refused to learn Frontend Engineering, I was not attracted to this field, don't ask me why, 
           but I used to see it as an ugly thing. But the necessity arise! If I wish to populate my portfolio with meaningful projects 
           deployed and usable by everyone, I have no more option than developing the frontend of my applications my self, 
-          no one will do it for me. That is how I come up with Vue, I learn the basics in two days, and started writing DeepPNG web page.
+          no one will do it for me. That is how I come up with Vue, I learned the basics in two days, and started writing DeepPNG web page.
           At this point, i don't see it as something ugly anymore, I like it, not as much as building APIs, but you got the point.
         </p><br>
         <p class="text-center">
