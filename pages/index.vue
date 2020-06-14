@@ -21,23 +21,65 @@
       </p>
 
       <!-- Skills -->
-      <main class="flex flex-row w-full max-w-xl space-x-3">
-        <div class="text-right">
-          Ok, lets start, you already know my name, but what i do?
-          im a Machine Learning Engineer, what that means?
-          Is it a sort of combination beetween Backend Engineer
-          and Data Scientist (Im mostly around deep Learning stuff), as extra, im familiar with Frotend engineering too,
+      <main class="grid grid-cols-1 gap-2 max-w-xl">
+        <h1 class="text-2xl text-center font-medium">Im a Machine Learning Engineer</h1>
+        <p class="text-center">
+          What that means? Is it a sort of combination beetween Backend Engineer
+          and Data Scientist (Im mostly around Deep Learning stuff), as extra, im familiar with Frontend Engineering too,
           but not too much (Why you was thinking i wish to keep this portfolio simple?),
           check the fancy words next here about what i know.
-        </div>
-        <ul>
-          <li>Flask</li>
-          <li>Tensorflow</li>
-          <li>DJango</li>
-          <li>Vue.js</li>
-          <li>Nuxt.js</li>
-          <li>Docker</li>
+        </p>
+        <ul class="flex flex-wrap flex-row justify-center space-x-2">
+          <li class="text-lg">Flask</li>
+          <li class="text-lg">Tensorflow</li>
+          <li class="text-lg">DJango</li>
+          <li class="text-lg">Vue.js</li>
+          <li class="text-lg">Nuxt.js</li>
+          <li class="text-lg">Docker</li>
+          <li class="text-lg">Python</li>
+          <li class="text-lg">JavaScript</li>
+          <li class="text-lg">Digital Ocean</li>
+          <li class="text-lg">Heroku</li>
+          <li class="text-lg">Unit Testing</li>
+          <li class="text-lg">CI/CD</li>
         </ul>
+      </main>
+
+      <!-- story -->
+      <main>
+        <h1 class="text-2xl text-center font-medium">Little story about me</h1><br>
+        <p class="text-center">
+          I will face it, I do everything wrong. I don't follow the classic path for learning Software Development, 
+          maybe that is the reason I struggle to find a job. Instead of pick HTML, CSS, and JS for pick up the basics of web development
+          (I already have strong programming skills at that point due to hobby game development),
+          I go straight to learn Deep Learning! (wtf).
+        </p><br>
+        <p class="text-center">
+          That was not hard, I'm very interested in this field, 
+          I picked it up (Including statistics, data analysis, data engineering, machine learning, and deep learning) in just a few months,
+          I'm not the next Einstein, but whatever, I'm capable of solving problems that can be tackled with this outstanding tech 
+          that is revolutionizing the way we think about the world, society, and ourselves as humans.
+        </p><br>
+        <p class="text-center">
+          But sooner than later, I realized, just that knowledge will not be enough to add value to any organization. 
+          So, I put my hands in the meal and started learning Backend Engineering, a lot of exciting and worthy stuff get into my head,
+          But one of the most interesting parts for me was being able to see how all those complex systems can be broken down into more 
+          manageable pieces of software, all that i learned to that point around Software Development and Deep Learning, 
+          started to match perfectly magically!
+        </p><br>
+        <p class="text-center">
+          From the start, I refused to learn Frontend Engineering, I was not attracted to this field, don't ask me why, 
+          but I used to see it as an ugly thing. But the necessity arise! If I wish to populate my portfolio with meaningful projects 
+          deployed and usable by everyone, I have no more option than developing the frontend of my applications my self, 
+          no one will do it for me. That is how I come up with Vue, I learn the basics in two days, and started writing DeepPNG web page.
+          At this point, i don't see it as something ugly anymore, I like it, not as much as building APIs, but you got the point.
+        </p><br>
+        <p class="text-center">
+          In the end, I learned everything anyone else learns in their career, but I do it in reverse order.
+          Lot of nights I fall sleep wishing go back in time 5 years and do everything the correct way 
+          (not only the learn order but a lot of other stuff i don't relate on this short story), 
+          maybe that way I would have a job right now. But its time to look forward, and that is what I do during the daytime!
+        </p>
       </main>
 
     </div>
