@@ -4,13 +4,14 @@
     <div class="flex flex-col w-full max-w-4xl items-center space-y-4">
 
       <!-- header -->
-      <header class="flex flex-col sm:flex-row justify-center w-full">
-        <h1 class="text-3xl w-full text-center sm:text-left">Whitman Bohorquez</h1>
-        <div class="flex flex-row flex-wrap items-end justify-end space-x-4 w-full justify-center sm:justify-end">
+      <header class="flex flex-col md:flex-row justify-center w-full">
+        <h1 class="text-4xl w-full text-center sm:text-left">Whitman Bohorquez</h1>
+        <div class="flex flex-row flex-wrap sm:flex-no-wrap items-end justify-end space-x-4 w-full justify-center sm:justify-end">
           <h1 class="text-xl">Contribs</h1>
           <h1 class="text-xl">Projects</h1>
           <h1 class="text-xl">Articles</h1>
           <h1 class="text-xl">Contact</h1>
+          <h1 class="text-xl">Story</h1>
         </div>
       </header>
 
@@ -42,6 +43,9 @@
           <li class="text-lg">Heroku</li>
           <li class="text-lg">Unit Testing</li>
           <li class="text-lg">CI/CD</li>
+          <li class="text-lg">Databases</li>
+          <li class="text-lg">Rest</li>
+          <li class="text-lg">GraphQL</li>
         </ul>
       </main>
 
