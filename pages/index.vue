@@ -25,7 +25,7 @@
       <main class="grid grid-cols-1 gap-2 max-w-xl">
         <h1 class="text-2xl text-center font-medium">Im a Machine Learning Engineer</h1>
         <p class="text-center">
-          What that means? Is it a sort of combination beetween Backend Engineer
+          What that means? Well, it is a sort of combination beetween Backend Engineer
           and Data Scientist (Im mostly around Deep Learning stuff), as extra, im familiar with Frontend Engineering too,
           but not too much (Why you was thinking i wish to keep this portfolio simple?),
           check the fancy words next here about what i know.
