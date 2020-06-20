@@ -112,11 +112,6 @@
 </template>
 
 <script>
-import Contribs from '~/components/Contribs'
-
 export default {
-  components: {
-    Contribs,
-  }
 }
 </script>

@@ -22,6 +22,7 @@ export default {
   },
 
   ...routerBase,
+  components: true,
   /*
   ** Customize the progress-bar color
   */
@@ -49,6 +50,7 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    '@nuxt/components',
   ],
   /*
   ** Axios module configuration
