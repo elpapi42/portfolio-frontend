@@ -52,6 +52,7 @@
       <!-- Contributions -->
       <main>
         <h1 class="text-2xl text-center font-medium">Contributions</h1>
+        <contribs/>
       </main>
 
       <!-- Projects -->
@@ -111,6 +112,11 @@
 </template>
 
 <script>
+import Contribs from '~/components/Contribs'
+
 export default {
+  components: {
+    Contribs,
+  }
 }
 </script>
