@@ -50,9 +50,9 @@
       </main>
 
       <!-- Contributions -->
-      <main>
+      <main class='w-full'>
         <h1 class="text-2xl text-center font-medium">Contributions</h1>
-        <contribs/>
+        <contribs-chart/>
       </main>
 
       <!-- Projects -->
