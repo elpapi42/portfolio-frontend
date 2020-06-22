@@ -33,8 +33,8 @@ export default {
   },
 
   async mounted() {
-    const data = await this.$axios.$get(process.env.API_URL + 'contribs/')
-    console.log(process.env.API_URL)
+    const data = await this.$axios.$get(process.env.DJANGO_API_URL + 'contribs/')
+    console.log(process.env.DJANGO_API_URL)
 
     this.months = data.months
     this.contribs = data.contribs
