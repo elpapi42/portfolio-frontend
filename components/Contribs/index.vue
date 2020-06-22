@@ -33,27 +33,11 @@ export default {
   },
 
   async mounted() {
-    this.months = [ 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec' ]
-    this.contribs = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-    this.total = 0
-    /*
     const data = await this.$axios.$get('http://localhost:8000/api/contribs/')
 
     this.months = data.months
     this.contribs = data.contribs
     this.total = data.total
-    
-    return {
-      months: data.months,
-      contribs: data.contribs,
-      total: data.total,
-    }*/
   },
-
-  watch: {
-    contribs() {
-      console.log(this.contribs)
-    }
-  }
 }
 </script>
