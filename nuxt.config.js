@@ -23,6 +23,12 @@ export default {
 
   ...routerBase,
   components: true,
+
+  env: {
+    baseUrl: '',
+    backendUrl: process.env.BACKEND_URL,
+  },
+
   /*
   ** Customize the progress-bar color
   */
