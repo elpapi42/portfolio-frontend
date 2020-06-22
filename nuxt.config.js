@@ -44,6 +44,7 @@ export default {
   buildModules: [
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/dotenv',
   ],
   /*
   ** Nuxt.js modules
@@ -52,7 +53,6 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxt/components',
-    '@nuxtjs/dotenv',
   ],
   /*
   ** Axios module configuration
