@@ -7,7 +7,7 @@
     ></contribs-chart>
 
     <div class="flex flex-col text-center sm:text-left sm:justify-between">
-      <h1 class="text-2xl font-medium">1500 Contribs Last Year</h1>
+      <h1 class="text-2xl font-medium">{{ total }} Contribs Last Year</h1>
       <p>
         Im very active on Github, adding stuff to my own personal projects, or sometimes,
         helping with Tensorflow Repo Issues.
@@ -33,11 +33,27 @@ export default {
   },
 
   async mounted() {
-    const response = await this.$axios.$get('http://localhost:8000/api/contribs/')
+    this.months = [ 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec' ]
+    this.contribs = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+    this.total = 0
+    /*
+    const data = await this.$axios.$get('http://localhost:8000/api/contribs/')
 
-    this.months = response.months
-    this.contribs = response.contribs
-    this.total = response.total
+    this.months = data.months
+    this.contribs = data.contribs
+    this.total = data.total
+    
+    return {
+      months: data.months,
+      contribs: data.contribs,
+      total: data.total,
+    }*/
+  },
+
+  watch: {
+    contribs() {
+      console.log(this.contribs)
+    }
   }
 }
 </script>

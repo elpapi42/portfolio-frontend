@@ -36,6 +36,13 @@ export default {
         legend: {
           display: false
         },
+        animation: {
+            duration: 0
+        },
+        hover: {
+            animationDuration: 0
+        },
+        responsiveAnimationDuration: 0,
         maintainAspectRatio: false,
       }
     }
