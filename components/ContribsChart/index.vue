@@ -3,7 +3,6 @@
     <line-chart 
       :chart-data='chartData'
       :chart-options='chartOptions'
-      css-classes=''
       :height='200'
     ></line-chart>
   </div>
@@ -26,6 +25,7 @@ export default {
             pointBorderColor: '#9e9e9e',
             pointBorderWidth: 4,
             pointRadius: 6,
+            pointHoverRadius: 7,
             data: [
               0,
               35,
@@ -47,6 +47,7 @@ export default {
       chartOptions: {
         scales: {
           yAxes: [{
+            display: false,
             ticks: {
               beginAtZero: true
             },
