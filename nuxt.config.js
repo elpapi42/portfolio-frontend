@@ -52,6 +52,7 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxt/components',
+    '@nuxtjs/dotenv',
   ],
   /*
   ** Axios module configuration

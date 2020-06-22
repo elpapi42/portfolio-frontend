@@ -33,7 +33,7 @@ export default {
   },
 
   async mounted() {
-    const data = await this.$axios.$get('http://localhost:8000/api/contribs/')
+    const data = await this.$axios.$get(process.env.API_URL + 'contribs/')
 
     this.months = data.months
     this.contribs = data.contribs
