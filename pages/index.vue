@@ -51,8 +51,7 @@
 
       <!-- Contributions -->
       <main class='w-full'>
-        <h1 class="text-2xl text-center font-medium">Contributions</h1>
-        <contribs-chart/>
+        <contribs/>
       </main>
 
       <!-- Projects -->

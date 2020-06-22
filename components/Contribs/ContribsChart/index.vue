@@ -1,9 +1,9 @@
 <template>
-  <div class=''>
+  <div>
     <line-chart 
       :chart-data='chartData'
       :chart-options='chartOptions'
-      :height='200'
+      :height='180'
     ></line-chart>
   </div>
 </template>
