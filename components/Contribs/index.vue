@@ -1,7 +1,10 @@
 <template>
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
 
-    <contribs-chart></contribs-chart>
+    <contribs-chart
+      :months="months"
+      :contribs="contribs"
+    ></contribs-chart>
 
     <div class="flex flex-col text-center sm:text-left sm:justify-between">
       <h1 class="text-2xl font-medium">1500 Contribs Last Year</h1>
@@ -19,6 +22,22 @@
 
 <script>
 export default {
-  name: 'Contribs'
+  name: 'Contribs',
+
+  data () {
+    return {
+      months: [ 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec' ],
+      contribs: [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+      total: 0,
+    }
+  },
+
+  async mounted() {
+    const response = await this.$axios.$get('http://localhost:8000/api/contribs/')
+
+    this.months = response.months
+    this.contribs = response.contribs
+    this.total = response.total
+  }
 }
 </script>

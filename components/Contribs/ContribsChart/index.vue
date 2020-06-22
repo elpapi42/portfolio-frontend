@@ -1,9 +1,9 @@
 <template>
   <div>
     <line-chart 
-      :chart-data='chartData'
-      :chart-options='chartOptions'
-      :height='180'
+      :chart-data="chartData"
+      :chart-options="chartOptions"
+      :height="180"
     ></line-chart>
   </div>
 </template>
@@ -12,38 +12,10 @@
 export default {
   name: 'ContribsChart',
 
+  props: [ 'months', 'contribs'],
+
   data() {
     return {
-      chartData: {
-        labels: [ 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec' ],
-        datasets: [
-          {
-            fill: false,
-            borderDash: [10, 5],
-            borderColor: '#8bc34a',
-            pointBackgroundColor: '#424242',
-            pointBorderColor: '#9e9e9e',
-            pointBorderWidth: 4,
-            pointRadius: 6,
-            pointHoverRadius: 7,
-            data: [
-              0,
-              35,
-              40,
-              18,
-              7,
-              7,
-              46,
-              42,
-              22,
-              49,
-              35,
-              86,
-            ]
-          }
-        ]
-      },
-
       chartOptions: {
         scales: {
           yAxes: [{
@@ -68,5 +40,26 @@ export default {
       }
     }
   },
+
+  computed: {
+    chartData() {
+      return {
+        labels: this.months,
+        datasets: [
+          {
+            fill: false,
+            borderDash: [10, 5],
+            borderColor: '#8bc34a',
+            pointBackgroundColor: '#424242',
+            pointBorderColor: '#9e9e9e',
+            pointBorderWidth: 4,
+            pointRadius: 6,
+            pointHoverRadius: 7,
+            data: this.contribs
+          }
+        ]
+      }
+    }
+  }
 }
 </script>

@@ -11,6 +11,12 @@ export default {
 
   mounted () {
     this.renderChart(this.chartData, this.chartOptions)
+  },
+
+  watch: {
+    chartData() {
+      console.log(this.chartData)
+    }
   }
 }
 </script>
