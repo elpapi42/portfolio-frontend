@@ -6,9 +6,9 @@
 */
 module.exports = {
   purge: [
-    './pages/*.vue',
-    './layouts/*.vue',
-    './components/*.vue',
+    './pages/**/*.vue',
+    './layouts/**/*.vue',
+    './components/**/*.vue',
   ],
   theme: {},
   variants: {},
