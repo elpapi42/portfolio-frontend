@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
   router: {
     base: '/portfolio/'
@@ -25,7 +27,6 @@ export default {
   components: true,
 
   env: {
-    baseUrl: '',
     backendUrl: process.env.BACKEND_URL,
   },
 
