@@ -1,5 +1,3 @@
-require('dotenv').config()
-
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
   router: {
     base: '/portfolio/'
@@ -24,10 +22,14 @@ export default {
   },
 
   ...routerBase,
+
   components: true,
 
-  env: {
+  publicRuntimeConfig: {
     backendUrl: process.env.BACKEND_URL,
+  },
+
+  privateRuntimeConfig: {
   },
 
   /*
@@ -51,7 +53,6 @@ export default {
   buildModules: [
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/dotenv',
   ],
   /*
   ** Nuxt.js modules
@@ -66,7 +67,6 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
-    //BaseURL: 'http://localhost:8000/api/'
   },
   /*
   ** Build configuration

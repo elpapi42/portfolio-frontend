@@ -68,8 +68,8 @@
       <main>
         <h1 class="text-2xl text-center font-medium">Little story about me</h1><br>
         <p class="text-center">
-          I will face it, I do everything wrong. I don't follow the classic path for learning Software Development, 
-          maybe that is the reason I struggle to find a job. Instead of pick HTML, CSS, and JS for pick up the basics of web development
+          I will face it, I do everything wrong in the past. I don't follow the classic path for learning Software Development, 
+          maybe that is the reason I struggling to find a job. Instead of HTML, CSS, and JS for pick up the basics of web development
           (I already have strong programming skills at that point due to hobby game development),
           I go straight to learn Deep Learning! (wtf).
         </p><br>

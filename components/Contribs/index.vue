@@ -33,8 +33,7 @@ export default {
   },
 
   async mounted() {
-    console.log(process.env.backendUrl)
-    const data = await this.$axios.$get(process.env.backendUrl + 'contribs/')
+    const data = await this.$axios.$get(this.$config.backendUrl + 'contribs/')
 
     this.months = data.months
     this.contribs = data.contribs
