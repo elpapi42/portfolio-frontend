@@ -22,6 +22,16 @@ export default {
   },
 
   ...routerBase,
+
+  components: true,
+
+  publicRuntimeConfig: {
+    backendUrl: process.env.BACKEND_URL,
+  },
+
+  privateRuntimeConfig: {
+  },
+
   /*
   ** Customize the progress-bar color
   */
@@ -35,6 +45,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    { src: '@/plugins/vue-chart.js', mode: 'client' }
   ],
   /*
   ** Nuxt.js dev-modules
@@ -49,6 +60,7 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    '@nuxt/components',
   ],
   /*
   ** Axios module configuration
