@@ -1,8 +1,8 @@
 <template>
-  <a href="https://github.com/ElPapi42/portfolio">
-    <span class="flex flex-col">
-      <h1 class="font-medium text-lg">portfolio</h1>
-      <p>An extremely simple personal portfolio created with an overkill tech stack</p>
+  <a :href="repoData.url">
+    <span class="flex flex-col border-2 rounded border-green-600 border-dashed p-2">
+      <h1 class="font-medium text-lg text-center">{{ repoData.name }}</h1>
+      <p class="text-center">{{ repoData.description }}</p>
     </span>
   </a>
 </template>

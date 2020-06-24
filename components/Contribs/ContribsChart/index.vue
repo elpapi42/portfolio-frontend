@@ -49,9 +49,9 @@ export default {
           {
             fill: false,
             borderDash: [10, 5],
-            borderColor: '#8bc34a',
-            pointBackgroundColor: '#424242',
-            pointBorderColor: '#9e9e9e',
+            borderColor: '#8BC34A',
+            pointBackgroundColor: '#212121',
+            pointBorderColor: '#9E9E9E',
             pointBorderWidth: 4,
             pointRadius: 6,
             pointHoverRadius: 7,
