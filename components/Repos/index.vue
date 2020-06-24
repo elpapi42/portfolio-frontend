@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="w-full">
     <h1 class="text-2xl text-center font-medium">Repos</h1>
     <repos-list></repos-list>
     Hello there

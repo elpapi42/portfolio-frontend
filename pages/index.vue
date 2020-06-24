@@ -55,7 +55,7 @@
       </main>
 
       <!-- Repos -->
-      <main>
+      <main class="w-full">
         <repos></repos>
       </main>
 
