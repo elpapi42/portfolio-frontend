@@ -12,7 +12,7 @@
         Im very active on Github, adding stuff to my own personal projects, or sometimes,
         helping with Tensorflow Repo Issues.
       </p>
-      <p class="italic font-light aaaa">
+      <p class="italic font-light">
         *This data was fetched from Github v4 (GraphQL) API, and preprocessed on the Django Backend for easy consumption.
       </p>
     </div>
