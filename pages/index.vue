@@ -6,7 +6,7 @@
       <!-- header -->
       <header class="flex flex-col md:flex-row justify-center w-full">
         <h1 class="text-4xl w-full text-center sm:text-left">Whitman Bohorquez</h1>
-        <div class="flex flex-row flex-wrap sm:flex-no-wrap items-end justify-end space-x-4 w-full justify-center sm:justify-end">
+        <div class="flex flex-row flex-wrap sm:flex-no-wrap items-end space-x-4 w-full justify-center sm:justify-end">
           <h1 class="text-xl">Contribs</h1>
           <h1 class="text-xl">Projects</h1>
           <h1 class="text-xl">Articles</h1>
@@ -54,9 +54,9 @@
         <contribs/>
       </main>
 
-      <!-- Projects -->
+      <!-- Repos -->
       <main>
-        <h1 class="text-2xl text-center font-medium">Projects</h1>
+        <repos></repos>
       </main>
 
       <!-- Articles -->
