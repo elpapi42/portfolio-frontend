@@ -1,8 +1,7 @@
 <template>
   <div class="w-full">
-    <h1 class="text-2xl text-center font-medium">Repos</h1>
     <repos-list></repos-list>
-    Hello there
+    <p class="italic font-light">*This was pulled from Github v4 (GraphQL) API</p>
   </div>
 </template>
 
