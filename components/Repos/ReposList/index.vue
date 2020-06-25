@@ -12,22 +12,15 @@
 export default {
   name: 'ReposList',
 
-  mounted() {
-    this.getRepos()
+  async mounted() {
+    const response = await this.$axios.get(this.$config.backendUrl + 'repos/')
+    this.reposData = response.data.repos
   },
 
   data() {
     return {
       reposData: [],
     }
-  },
-
-  methods: {
-    async getRepos() {
-      const response = await this.$axios.get(this.$config.backendUrl + 'repos/')
-      this.reposData = response.data.repos
-      this.forceRerender()
-    },
   },
 }
 </script>
