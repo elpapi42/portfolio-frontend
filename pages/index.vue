@@ -1,10 +1,10 @@
 <template>
   <div class="flex justify-center w-full">
     <!-- Limit the max width on large screens -->
-    <div class="flex flex-col w-full max-w-4xl items-center space-y-4">
+    <div class="flex flex-col w-full max-w-4xl items-center">
 
       <!-- header -->
-      <header class="flex flex-col md:flex-row justify-center w-full">
+      <header class="flex flex-col md:flex-row justify-center px-4 w-full">
         <h1 class="text-4xl w-full text-center sm:text-left">Whitman Bohorquez</h1>
         <div class="flex flex-row flex-wrap sm:flex-no-wrap items-end space-x-4 w-full justify-center sm:justify-end">
           <nuxt-link to="/" class="text-xl">Resume</nuxt-link>
@@ -12,16 +12,16 @@
         </div>
       </header>
 
-      <main class="grid grid-cols-3 gap-4 p-2 w-full">
+      <main class="grid grid-cols-1 md:grid-cols-3 gap-4 px-4 w-full">
 
         <!-- Introduction -->
-        <p class="col-span-3 text-center">
+        <p class="md:col-span-3 text-center">
           Hello there! Welcome to the most simple online resume/portafolio,
           created with the most fancy/overkill tech stack possible. Why? Who cares, the fancier, the better!
         </p>
 
         <!-- Intro -->
-        <main class="col-span-3 flex flex-col items-center">
+        <main class="md:col-span-3 flex flex-col items-center">
           <div class="max-w-xl">
             <h1 class="text-2xl text-center font-medium">Im a Machine Learning Engineer</h1>
             <p class="text-center">
@@ -34,7 +34,7 @@
         </main>
 
         <!-- Skills -->
-        <main class="col-span-3 flex flex-col items-center w-full">
+        <main class="md:col-span-3 flex flex-col items-center w-full">
           <ul class="flex flex-wrap flex-row justify-center space-x-2 max-w-xl">
             <li class="text-lg">Flask</li>
             <li class="text-lg">Tensorflow</li>
@@ -55,12 +55,12 @@
         </main>
 
         <!-- Contributions -->
-        <main class='col-span-3'>
+        <main class='md:col-span-3'>
           <contribs/>
         </main>
 
         <!-- Repos -->
-        <main class="col-span-2">
+        <main class="md:col-span-2">
           <repos></repos>
         </main>
 
@@ -71,7 +71,7 @@
       
       </main>
 
-      <main class="grid grid-cols-2 gap-4 p-2 w-full">
+      <main class="grid grid-cols-1 sm:grid-cols-2 gap-4 px-4 w-full">
 
         <!-- Projects -->
         <main class="col-span-1">
@@ -84,7 +84,7 @@
         </main>
 
         <!-- story -->
-        <main class="col-span-2">
+        <main class="sm:col-span-2">
           <h1 class="text-2xl text-center font-medium">Little story about me</h1><br>
           <p class="text-center">
             I will face it, I do everything wrong in the past. I don't follow the classic path for learning Software Development, 
@@ -121,7 +121,7 @@
         </main>
 
         <!-- Contact -->
-        <main class="col-span-2">
+        <main class="sm:col-span-2">
           <h1 class="text-2xl text-center font-medium">Contact</h1>
         </main>
 
