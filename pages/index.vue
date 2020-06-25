@@ -67,7 +67,7 @@
 
         <!-- Langs -->
         <main class="col-span-1">
-          <h1 class="text-2xl text-center font-medium">Languages</h1>
+          <langs></langs>
         </main>
       
       </main>
