@@ -4,7 +4,7 @@
     <div class="flex flex-col w-full max-w-4xl items-center">
 
       <!-- header -->
-      <header class="flex flex-col md:flex-row justify-center px-4 w-full">
+      <header class="flex flex-col md:flex-row justify-center px-4 py-2 w-full">
         <h1 class="text-4xl w-full text-center sm:text-left">Whitman Bohorquez</h1>
         <div class="flex flex-row flex-wrap sm:flex-no-wrap items-end space-x-4 w-full justify-center sm:justify-end">
           <nuxt-link to="/" class="text-xl">Resume</nuxt-link>
@@ -12,7 +12,7 @@
         </div>
       </header>
 
-      <main class="grid grid-cols-1 md:grid-cols-3 gap-4 px-4 w-full">
+      <main class="grid grid-cols-1 md:grid-cols-3 gap-4 px-4 py-2 w-full">
 
         <!-- Introduction -->
         <p class="md:col-span-3 text-center">
@@ -25,9 +25,10 @@
           <div class="max-w-xl">
             <h1 class="text-2xl text-center font-medium">Im a Machine Learning Engineer</h1>
             <p class="text-center">
-              What that means? Well, it is a sort of combination beetween Backend Engineer
+              What that means? Well, it is a sort of combination beetween Backend Engineer 
+              (For design and build APIs and Backend Architectures)
               and Data Scientist (Im mostly around Deep Learning stuff), as extra, im familiar with Frontend Engineering too,
-              but not too much (Why you was thinking i wish to keep this portfolio simple?),
+              but not too much (Why you was thinking i wish to keep this portfolio simple?), and Soft DevOps,
               check the fancy words next here about what i know.
             </p>
           </div>
@@ -71,7 +72,7 @@
       
       </main>
 
-      <main class="grid grid-cols-1 sm:grid-cols-2 gap-4 px-4 w-full">
+      <main class="grid grid-cols-1 sm:grid-cols-2 gap-4 px-4 py-2 w-full">
 
         <!-- Projects -->
         <main class="col-span-1">
