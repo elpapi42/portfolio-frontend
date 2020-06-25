@@ -7,8 +7,8 @@
       <header class="flex flex-col md:flex-row justify-center w-full">
         <h1 class="text-4xl w-full text-center sm:text-left">Whitman Bohorquez</h1>
         <div class="flex flex-row flex-wrap sm:flex-no-wrap items-end space-x-4 w-full justify-center sm:justify-end">
-          <h1 class="text-xl">Resume</h1>
-          <h1 class="text-xl">Blog</h1>
+          <nuxt-link to="/" class="text-xl">Resume</nuxt-link>
+          <nuxt-link to="/" class="text-xl">Blog</nuxt-link>
         </div>
       </header>
 
