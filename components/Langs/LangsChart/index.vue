@@ -17,22 +17,6 @@ export default {
   data() {
     return {
       chartOptions: {
-        scales: {
-          yAxes: [{
-            display: false,
-            ticks: {
-              beginAtZero: true
-            },
-            gridLines: {
-              display: false
-            }
-          }],
-          xAxes: [ {
-            gridLines: {
-              display: false
-            }
-          }]
-        },
         legend: {
           display: false
         },
@@ -47,7 +31,16 @@ export default {
         labels: this.langs,
         datasets: [
           {
-            data: this.ocurrences
+            data: this.ocurrences,
+            backgroundColor: [
+              '#689F38',
+              '#757575',
+              '#8BC34A',
+              '#212121',
+              '#DCEDC8',
+              '#9E9E9E',
+              '#212121'
+            ],
           }
         ]
       }

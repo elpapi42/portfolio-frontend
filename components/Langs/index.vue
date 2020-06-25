@@ -3,7 +3,7 @@
 
     <langs-chart
       :langs="langs"
-      :ocurrences="[5, 4, 1]"
+      :ocurrences="ocurrences"
     ></langs-chart>
 
     <h1 class="italic font-light text-center md:text-left">
@@ -19,9 +19,16 @@ export default {
 
   data () {
     return {
-      langs: ['Python', 'JavaScript', 'Go'],
-      ocurrences: [5, 4, 1],
+      langs: ['Python'],
+      ocurrences: [1],
     }
+  },
+
+  async mounted() {
+    const data = await this.$axios.$get(this.$config.backendUrl + 'langs/')
+
+    this.langs = data.langs
+    this.ocurrences = data.ocurrences
   },
 }
 </script>
