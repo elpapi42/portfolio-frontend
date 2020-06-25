@@ -1,11 +1,11 @@
 <template>
-  <div class="w-full">
-    <repos-list></repos-list>
+  <div>
+    <polar-chart></polar-chart>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Repos'
+  name: 'LangsChart'
 }
 </script>
