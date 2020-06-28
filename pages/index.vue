@@ -24,7 +24,7 @@
         <main class="md:col-span-3 flex flex-col items-center">
           <div class="max-w-xl">
             <h1 class="text-2xl text-center font-medium">Im a Machine Learning Engineer</h1>
-            <p class="text-center">
+            <p class="text-justify">
               What that means? Well, it is a sort of combination beetween Backend Engineer 
               (For design and build APIs and Backend Architectures)
               and Data Scientist (Im mostly around Deep Learning stuff), as extra, im familiar with Frontend Engineering too,
@@ -81,39 +81,39 @@
 
         <!-- Articles -->
         <main class="col-span-1">
-          <h1 class="text-2xl text-center font-medium">Articles</h1>
+          <stories></stories>
         </main>
 
         <!-- story -->
         <main class="sm:col-span-2">
           <h1 class="text-2xl text-center font-medium">Little story about me</h1><br>
-          <p class="text-center">
+          <p class="text-justify">
             I will face it, I do everything wrong in the past. I don't follow the classic path for learning Software Development, 
             maybe that is the reason I struggling to find a job. Instead of HTML, CSS, and JS for pick up the basics of web development
             (I already have strong programming skills at that point due to hobby game development),
             I go straight to learn Deep Learning! (wtf).
           </p><br>
-          <p class="text-center">
+          <p class="text-justify">
             That was not hard, I'm very interested in this field, 
             I picked it up (Including statistics, data analysis, data engineering, machine learning, and deep learning) in just a few months,
             I'm not the next Einstein, but whatever, I'm capable of solving problems that can be tackled with this outstanding tech 
             that is revolutionizing the way we think about the world, society, and ourselves as humans.
           </p><br>
-          <p class="text-center">
+          <p class="text-justify">
             But sooner than later, I realized, just that knowledge will not be enough to add value to any organization. 
             So, I put my hands in the meal and started learning Backend Engineering, a lot of exciting and worthy stuff get into my head,
             But one of the most interesting parts for me was being able to see how all those complex systems can be broken down into more 
             manageable pieces of software, all that i learned to that point around Software Development and Deep Learning, 
             started to match perfectly magically!
           </p><br>
-          <p class="text-center">
+          <p class="text-justify">
             From the start, I refused to learn Frontend Engineering, I was not attracted to this field, don't ask me why, 
             but I used to see it as an ugly thing. But the necessity arise! If I wish to populate my portfolio with meaningful projects 
             deployed and usable by everyone, I have no more option than developing the frontend of my applications my self, 
             no one will do it for me. That is how I come up with Vue, I learned the basics in two days, and started writing DeepPNG web page.
             At this point, i don't see it as something ugly anymore, I like it, not as much as building APIs, but you got the point.
           </p><br>
-          <p class="text-center">
+          <p class="text-justify">
             In the end, I learned everything anyone else learns in their career warmup, but I do it in reverse order.
             Lot of nights I fall sleep wishing go back in time 5 years and do everything the correct way 
             (not only the learn order but a lot of other stuff i don't relate on this short story), 
