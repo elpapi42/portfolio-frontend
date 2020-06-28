@@ -3,9 +3,9 @@
     <img v-if="imageUrl" :src="imageUrl" :alt="title" class="h-48 object-cover rounded-t-lg">
     <div v-else class="border-t-2 border-green-700 border-dashed"></div>
 
-    <div class="p-2 border-b-2 border-r-2 border-l-2 rounded-b-lg border-green-700 border-dashed">
-      <h1 class="font-medium text-lg">Title</h1>
-      <p class="text-justify">Introduction to the article comign here downloaded from stripe</p>
+    <div class="flex flex-col space-y-1 p-2 border-b-2 border-r-2 border-l-2 rounded-b-lg border-green-700 border-dashed">
+      <h1 class="font-medium text-lg">{{ title }}</h1>
+      <p class="text-justify text-sm">{{ body.substring(0, 150) + '...' }}</p>
     </div>
   </div>
 </template>
@@ -21,7 +21,7 @@ export default {
   props: [
     'title',
     'imageUrl',
-    'description'
+    'body'
   ]
 }
 </script>

@@ -4,7 +4,7 @@ export const state = () => ({
 
 export const actions = {
   async dispatchStories({commit}) {
-    const response = await this.$axios.get('http://portfolio-strapi:1337/stories')
+    const response = await this.$axios.get(this.$config.strapiUrl + '/stories?_sort=created_at:asc')
     return commit('setStories', response.data)
   }
 }
