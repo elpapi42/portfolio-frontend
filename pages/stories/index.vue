@@ -1,7 +1,7 @@
 <template>
   <div class="flex justify-center w-full">
     <!-- Limit the max width on large screens -->
-    <div class="flex flex-col w-full max-w-4xl items-center space-y-4">
+    <div class="flex flex-col w-full max-w-4xl items-center space-y-2">
       <!-- header -->
       <header class="flex flex-col md:flex-row justify-center px-4 py-2 w-full">
         <h1 class="text-4xl w-full text-center sm:text-left">Whitman Bohorquez</h1>
