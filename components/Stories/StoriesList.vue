@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col space-y-4">
+  <div>
     <post-card
       v-for="story in stories"
       :key="story.id"
