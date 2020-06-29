@@ -7,25 +7,37 @@
       :title="story.title"
       :body="story.body"
       :image-url="getCover(story.cover)"
-      base-route="/stories"
+      :base-route="baseRoute"
     ></post-card>
   </div>
 </template>
 
 <script>
+/*
+Simple list, the styling is at hand of the invoker
+*/
 export default {
   name: 'Stories',
 
+  props: {
+    maxStories: { default: -1 },
+    baseRoute: {}
+  },
+
   computed: {
     stories() {
-      return this.$store.state.stories.list.slice(0, 2)
+      if(this.maxStories == -1) {
+        return this.$store.state.stories.list
+      }
+      return this.$store.state.stories.list.slice(0, this.maxStories)
     },
   },
 
   methods: {
     getCover(cover) {
       if(cover) {
-        return (this.$config.dev ? this.$config.strapiUrl : this.$config.devStrapiUrl) + cover.url
+        const strapiUrl = this.$config.dev ? this.$config.strapiUrl : this.$config.devStrapiUrl
+        return strapiUrl + cover.url
       } else {
         return ''
       }
