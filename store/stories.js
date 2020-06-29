@@ -5,7 +5,7 @@ export const state = () => ({
 export const actions = {
   async dispatchStories({commit}) {
     const response = await this.$axios.get(this.$config.strapiUrl + '/stories?_sort=created_at:asc')
-    return commit('setStories', response.data)
+    return commit('setStories', response.data.reverse())
   }
 }
 
