@@ -37,7 +37,7 @@ export default {
     getCover(cover) {
       if(cover) {
         const strapiUrl = this.$config.dev ? this.$config.strapiUrl : this.$config.devStrapiUrl
-        return strapiUrl + cover.url
+        return strapiUrl + cover.formats.small.url
       } else {
         return ''
       }
