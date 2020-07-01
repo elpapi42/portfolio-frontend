@@ -17,7 +17,7 @@
 Simple list, the styling is at hand of the invoker
 */
 export default {
-  name: 'Stories',
+  name: 'StoriesList',
 
   props: {
     maxStories: { default: -1 },
