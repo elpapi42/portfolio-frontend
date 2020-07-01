@@ -9,10 +9,11 @@
         Welcome to Stories, my personal Blog, where i relate stuff around my proffesional life as Software Engineer, take a look!
       </p>
 
-      <stories-list
-        base-route="/stories"
+      <post-list
+        route="/stories"
+        :pool="$store.state.stories.list"
         class="grid grid-cols-1 sm:grid-cols-2 gap-4 px-4 py-2"
-      ></stories-list>
+      ></post-list>
 
       <p class="font-light w-full px-4">
         *This blog is powered by Strapi, a modern, high performance Headless CMS

@@ -73,9 +73,9 @@
           <h1 class="text-2xl text-center font-medium">Projects</h1>
         </main>
 
-        <!-- Articles -->
+        <!-- Stories -->
         <main class="col-span-1">
-          <stories></stories>
+          <last-stories></last-stories>
         </main>
 
         <!-- Contact -->
