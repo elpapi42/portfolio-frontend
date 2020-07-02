@@ -33,17 +33,12 @@ export default {
     }
   },
 
-  validate ({ params }) {
-    return ['stories'].some(item => item == params.postCategory)
+  validate ({ store, params }) {
+    return Object.keys(store.state.posts).some(item => item == params.postCategory)
   },
 
   asyncData({ store, params }) {
-    // Mapping of available post types pools
-    const availablePools = {
-      stories: store.state.stories
-    }
-
-    return { pool: availablePools[params.postCategory] }
+    return { pool: store.state.posts[params.postCategory] }
   }
 }
 </script>
