@@ -5,7 +5,7 @@
     <post-list
       :max-posts="3"
       route="/stories"
-      :pool="$store.state.stories.list"
+      :pool="$store.state['stories']"
       class="flex flex-col space-y-4"
     ></post-list>
 

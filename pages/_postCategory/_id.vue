@@ -11,24 +11,31 @@
 
 <script>
 export default {
-  name: 'Story',
+  name: 'Post',
 
   data() {
     return {
-      storyData: []
+      postData: []
     }
   },
 
   mounted() {
     const id = this.$route.params.id
-    this.storyData = this.$store.state.stories.list.filter(item => item.id == id)[0]
+    this.storyData = this.$store.state.stories.filter(item => item.id == id)[0]
   },
 
   validate ({ params, store }) {
     const isNumber = /^\d+$/.test(params.id)
     if(!isNumber) { return false }
 
-    return store.state.stories.list.some(item => item.id == params.id)
+    if(!['stories'].some(item => item == params.postCategory)) {return false}
+
+    return store.state.stories.some(item => item.id == params.id)
+  },
+
+  asyncData({ store, params }) {
+
+    return { postData: availablePools[params.postCategory] }
   }
 }
 </script>

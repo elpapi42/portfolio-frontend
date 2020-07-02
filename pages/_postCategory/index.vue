@@ -10,7 +10,7 @@
       </p>
 
       <post-list
-        :route="'/' + $route.postType"
+        :route="'/' + $route.params.postCategory"
         :pool="pool"
         class="grid grid-cols-1 sm:grid-cols-2 gap-4 px-4 py-2"
       ></post-list>
@@ -34,16 +34,16 @@ export default {
   },
 
   validate ({ params }) {
-    return ['stories'].some(item => item == params.postPool)
+    return ['stories'].some(item => item == params.postCategory)
   },
 
   asyncData({ store, params }) {
     // Mapping of available post types pools
     const availablePools = {
-      stories: store.state.stories.list
+      stories: store.state.stories
     }
 
-    return { pool: availablePools[params.postPool] }
+    return { pool: availablePools[params.postCategory] }
   }
 }
 </script>
