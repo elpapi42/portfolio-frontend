@@ -10,13 +10,13 @@
       </p>
 
       <post-list
-        route="/stories"
-        :pool="$store.state.stories.list"
+        :route="'/' + $route.postType"
+        :pool="pool"
         class="grid grid-cols-1 sm:grid-cols-2 gap-4 px-4 py-2"
       ></post-list>
 
       <p class="font-light w-full px-4">
-        *This blog is powered by Strapi, a modern, high performance Headless CMS
+        *Powered by Strapi, a modern, high performance Headless CMS
       </p>
 
     </div>
@@ -25,6 +25,25 @@
 
 <script>
 export default {
-  name: 'Stories',
+  name: 'Posts',
+
+  data() {
+    return {
+      pool: [],
+    }
+  },
+
+  validate ({ params }) {
+    return ['stories'].some(item => item == params.postPool)
+  },
+
+  asyncData({ store, params }) {
+    // Mapping of available post types pools
+    const availablePools = {
+      stories: store.state.stories.list
+    }
+
+    return { pool: availablePools[params.postPool] }
+  }
 }
 </script>

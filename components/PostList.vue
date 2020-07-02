@@ -21,7 +21,7 @@ export default {
   name: 'PostList',
 
   props: {
-    pool: { default: [], type: Array },
+    pool: { type: Array },
     route: { default: '/', type: String},
     maxPosts: { default: -1, type: Number },
   },

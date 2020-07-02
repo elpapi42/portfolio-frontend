@@ -22,10 +22,9 @@ export default {
   mounted() {
     const id = this.$route.params.id
     this.storyData = this.$store.state.stories.list.filter(item => item.id == id)[0]
-    console.log(this.storyData)
   },
 
-  validate ({ params, query, store }) {
+  validate ({ params, store }) {
     const isNumber = /^\d+$/.test(params.id)
     if(!isNumber) { return false }
 
