@@ -3,5 +3,3 @@ export const actions = {
     await dispatch('posts/dispatchPosts')
   },
 }
-
-

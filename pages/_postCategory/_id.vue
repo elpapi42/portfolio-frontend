@@ -4,7 +4,17 @@
     <div class="flex flex-col w-full max-w-4xl items-center space-y-2">
       <!-- header -->
       <header-bar></header-bar>
-      <p>{{ $route.params.id }}</p>
+
+      <h1 class="w-full px-4 text-xl font-medium">{{ postData.title }}</h1>
+
+      <img
+        :src="getCover(postData.cover)"
+        alt="cover image"
+        class="w-full object-cover h-64"
+      >
+
+      <p class="w-full px-4 text-justify">{{ postData.body }}</p>
+
     </div>
   </div>
 </template>
@@ -15,27 +25,34 @@ export default {
 
   data() {
     return {
-      postData: []
+      postData: null
     }
-  },
-
-  mounted() {
-    const id = this.$route.params.id
-    this.storyData = this.$store.state.stories.filter(item => item.id == id)[0]
   },
 
   validate ({ params, store }) {
     const isNumber = /^\d+$/.test(params.id)
     if(!isNumber) { return false }
 
-    if(!['stories'].some(item => item == params.postCategory)) {return false}
+    if(!Object.keys(store.state.posts).some(item => item == params.postCategory)) {return false}
 
-    return store.state.stories.some(item => item.id == params.id)
+    return store.state.posts.stories.some(item => item.id == params.id)
   },
 
-  asyncData({ store, params }) {
+  asyncData({ params, store }) {
+    return {
+      postData: store.state.posts.stories.find(item => item.id == params.id)
+    }
+  },
 
-    return { postData: availablePools[params.postCategory] }
+  methods: {
+    getCover(cover) {
+      if(!cover) {
+        return ''
+      }
+
+      const strapiUrl = this.$config.dev ? this.$config.strapiUrl : this.$config.devStrapiUrl
+      return strapiUrl + cover.url
+    }
   }
 }
 </script>

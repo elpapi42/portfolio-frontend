@@ -11,7 +11,7 @@
 
       <post-list
         :route="'/' + $route.params.postCategory"
-        :pool="pool"
+        :pool="$store.state.posts[$route.params.postCategory]"
         class="grid grid-cols-1 sm:grid-cols-2 gap-4 px-4 py-2"
       ></post-list>
 
@@ -27,18 +27,8 @@
 export default {
   name: 'Posts',
 
-  data() {
-    return {
-      pool: [],
-    }
-  },
-
   validate ({ store, params }) {
     return Object.keys(store.state.posts).some(item => item == params.postCategory)
   },
-
-  asyncData({ store, params }) {
-    return { pool: store.state.posts[params.postCategory] }
-  }
 }
 </script>
