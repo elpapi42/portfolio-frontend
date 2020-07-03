@@ -1,6 +1,6 @@
 <template>
   <article>
-    <h1 class="w-full px-4 text-xl font-medium">{{ postData.title }}</h1>
+    <h1 class="w-full px-4 text-xl font-medium text-center sm:text-left">{{ postData.title }}</h1>
 
     <img
       :src="getCover(postData.cover)"
@@ -8,7 +8,7 @@
       class="w-full object-cover h-64"
     >
 
-    <div class="markdown" v-html="parsedBody"></div>
+    <div class="markdown text-justify px-4" v-html="parsedBody"></div>
   </article>
 </template>
 
