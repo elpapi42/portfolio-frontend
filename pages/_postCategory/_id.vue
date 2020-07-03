@@ -1,25 +1,20 @@
 <template>
-  <div class="flex justify-center w-full">
-    <!-- Limit the max width on large screens -->
-    <div class="flex flex-col w-full max-w-4xl items-center space-y-2">
-      <!-- header -->
-      <header-bar></header-bar>
+  <div>
+    <h1 class="w-full px-4 text-xl font-medium">{{ postData.title }}</h1>
 
-      <h1 class="w-full px-4 text-xl font-medium">{{ postData.title }}</h1>
+    <img
+      :src="getCover(postData.cover)"
+      alt="cover image"
+      class="w-full object-cover h-64"
+    >
 
-      <img
-        :src="getCover(postData.cover)"
-        alt="cover image"
-        class="w-full object-cover h-64"
-      >
-
-      <p class="w-full px-4 text-justify">{{ postData.body }}</p>
-
-    </div>
+    <div class="w-full px-4 text-justify" v-html="parsedBody"></div>
   </div>
 </template>
 
 <script>
+import marked from 'marked'
+
 export default {
   name: 'Post',
 
@@ -44,6 +39,12 @@ export default {
     }
   },
 
+  computed: {
+    parsedBody() {
+      return marked(this.postData.body)
+    }
+  },
+
   methods: {
     getCover(cover) {
       if(!cover) {
@@ -52,7 +53,7 @@ export default {
 
       const strapiUrl = this.$config.dev ? this.$config.strapiUrl : this.$config.devStrapiUrl
       return strapiUrl + cover.url
-    }
+    },
   }
 }
 </script>
