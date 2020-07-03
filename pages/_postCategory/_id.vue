@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <article>
     <h1 class="w-full px-4 text-xl font-medium">{{ postData.title }}</h1>
 
     <img
@@ -8,8 +8,8 @@
       class="w-full object-cover h-64"
     >
 
-    <div class="w-full px-4 text-justify" v-html="parsedBody"></div>
-  </div>
+    <div class="markdown" v-html="parsedBody"></div>
+  </article>
 </template>
 
 <script>

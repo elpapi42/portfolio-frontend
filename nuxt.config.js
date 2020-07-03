@@ -36,6 +36,7 @@ export default {
   ** Global CSS
   */
   css: [
+    '@/assets/css/markdown.css',
   ],
   /*
   ** Plugins to load before mounting the App
