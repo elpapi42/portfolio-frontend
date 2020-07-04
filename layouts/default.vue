@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <nuxt />
+  <div class="flex flex-col items-center w-full">
+    <header-bar class="w-full max-w-4xl"></header-bar>
+    <nuxt class="flex flex-col w-full max-w-4xl items-center space-y-2"/>
   </div>
 </template>
 
