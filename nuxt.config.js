@@ -22,6 +22,7 @@ export default {
   publicRuntimeConfig: {
     backendUrl: process.env.BACKEND_URL,
     strapiUrl: process.env.STRAPI_URL,
+    strapiLocalStorage: process.env.STRAPI_LOCAL_STORAGE, //If the strapi backend is using local assets storage
   },
 
   privateRuntimeConfig: {
