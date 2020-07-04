@@ -51,7 +51,8 @@ export default {
         return ''
       }
 
-      return this.$config.strapiUrl + cover.url
+      const baseUrl = this.$config.strapiLocalStorage ? this.$config.strapiUrl : ''
+      return baseUrl + cover.url
     },
   }
 }
