@@ -51,8 +51,7 @@ export default {
         return ''
       }
 
-      const strapiUrl = this.$config.dev ? this.$config.strapiUrl : this.$config.devStrapiUrl
-      return strapiUrl + cover.url
+      return this.$config.strapiUrl + cover.url
     },
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <main class="grid grid-cols-1 md:grid-cols-3 gap-4 px-4 py-2 w-full">
+    <main class="grid grid-cols-1 md:grid-cols-3 gap-4 px-4 w-full">
 
       <!-- Introduction -->
       <p class="md:col-span-3 text-center">

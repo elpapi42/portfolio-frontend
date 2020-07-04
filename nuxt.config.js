@@ -22,7 +22,6 @@ export default {
   publicRuntimeConfig: {
     backendUrl: process.env.BACKEND_URL,
     strapiUrl: process.env.STRAPI_URL,
-    devStrapiUrl: process.env.DEV_STRAPI_URL,
   },
 
   privateRuntimeConfig: {
