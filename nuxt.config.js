@@ -17,8 +17,11 @@ export default {
 
   components: true,
 
+  dev: (process.env.NODE_ENV !== 'production'),
+
   publicRuntimeConfig: {
     backendUrl: process.env.BACKEND_URL,
+    strapiUrl: process.env.STRAPI_URL,
   },
 
   privateRuntimeConfig: {
@@ -32,6 +35,7 @@ export default {
   ** Global CSS
   */
   css: [
+    '@/assets/css/markdown.css',
   ],
   /*
   ** Plugins to load before mounting the App
